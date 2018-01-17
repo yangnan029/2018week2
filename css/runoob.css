@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
 }
-ul,
 li {
   list-style: none;
 }
@@ -11,8 +10,9 @@ a {
 }
 .clearfix {
   zoom: 1;
+  /* 这里不需要 :: */
 }
-.clearfix::after {
+.clearfix:after {
   display: block;
   content: '';
   height: 0;
@@ -22,7 +22,7 @@ body {
   background: #f6f6f6;
 }
 body .container {
-  width: 100%;
+  /* 不需要设置宽度 盒子（块级元素）的宽度为100% */
 }
 body .container .title {
   width: 1140px;
@@ -113,6 +113,11 @@ body .container .main_container .content .left .left_list ul li:nth-child(odd) {
   border-top: 1px solid #efefef;
   border-bottom: 1px solid #efefef;
   border-radius: 3px;
+}
+body .container .main_container .content .left .left_list ul li a {
+  font-size: 13px;
+  padding-left: 20px;
+  color: #333333;
 }
 body .container .main_container .content .left .left_list ul li p {
   font-size: 13px;
