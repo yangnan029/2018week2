@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>百度一下，你就知道</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" href="css/baidu.css">
 </head>
 
@@ -32,7 +33,7 @@
                     <a href="#">学术</a>
                 </li>
                 <li>
-                    <a href="#">登录</a>
+                    <a href="#" id="login">登录</a>
                 </li>
                 <li>
                     <a href="#">设置</a>
@@ -51,12 +52,14 @@
                 <div class="input_box">
                     <input type="text">
                     <span></span>
-                </div><button>百度一下</button>
+                </div>
+                <button>百度一下</button>
             </div>
         </div>
         <div class="footer">
             <div class="mobile_baidu">
-                <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png" alt="">
+                <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_efde696.png"
+                    alt="">
                 <p>手机百度</p>
             </div>
             <div class="footer_list">
@@ -76,11 +79,120 @@
                 </ul>
             </div>
             <div class="copyright">
-                <span>©2018 Baidu 使用百度前必读 意见反馈 京ICP证030173号<i></i></span>
-                <span class="two">京公网安备11000002000001号<i></i></span>
+                <span>©2018 Baidu 使用百度前必读 意见反馈 京ICP证030173号
+                    <i></i>
+                </span>
+                <span class="two">京公网安备11000002000001号
+                    <i></i>
+                </span>
             </div>
         </div>
     </div>
+    <div class="opt"></div>
+    <div class="sub_container">
+        <div class="login_username">
+            <div class="del"></div>
+            <p class="login_tit">用户名密码登录</p>
+
+            <input type="text" placeholder="请输入手机/邮箱/用户名">
+
+            <input type="password" name="" id="" placeholder="密码">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="">
+                <span>下次自动登录</span>
+            </div>
+            <button>登录</button>
+            <div class="login_last clearfix">
+                <div class="forget">
+                    <a href="#">忘记密码？</a>
+                </div>
+                <div class="login_sms">
+                    <a href="#">短信快捷登录</a>
+                </div>
+            </div>
+
+            <div class="login_more">
+                <div class="login_code">
+                    <p>
+                        <a href="#" class="loginByCode">扫码登录</a>
+                    </p>
+                    <div class="icons">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" class="qq"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="second">
+                    <a href="#">立即注册</a>
+                </p>
+            </div>
+        </div>
+        <div class="login_codes">
+            <div class="del"></div>
+            <p class="login_tit">扫码登录</p>
+            <img src="https://passport.baidu.com/v2/api/qrcode?sign=c4340e2216b3653a73bd38f022ccc254&uaonly=" alt="">
+            <p class="img_details">请使用
+                <span>百度App</span>扫码登录</p>
+            <div class="login_code_list">
+                <ul class="clearfix">
+                    <li>
+                        <span></span>安全</li>
+                    <li>
+                        <span></span>高效</li>
+                    <li>
+                        <span></span>便捷</li>
+                </ul>
+            </div>
+            <div class="login_more">
+                <div class="login_code">
+                    <p>
+                        <a href="#" class="loginByUsername">用户名登录</a>
+                    </p>
+                    <div class="icons">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="#" class="qq"></a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="second">
+                    <a href="#">立即注册</a>
+                </p>
+            </div>
+        </div>
+        <script>
+           function test(target,cls1,cls2,display) {
+               if (display=='show') {
+                   $(target).on('click',function () {
+                        $(cls1).hide();
+                        $(cls2).show();
+                   })
+               } else {
+                   $(target).on('click',function () {
+                    $(cls1).show();
+                    $(cls2).hide();
+                   })
+               }
+           
+           }
+           test('.del','.opt,.login_codes', '','show');
+           test('#login','.opt,.login_codes','','hide');
+           test('.loginByCode','.login_codes','.login_username','hide');
+           test('.loginByUsername','.login_codes','.login_username','show');
+
+
+
+
+        </script>
 </body>
 
 </html>

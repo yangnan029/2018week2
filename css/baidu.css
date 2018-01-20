@@ -75,9 +75,10 @@ li {
 }
 .container .main_content .search_box .input_box input {
   width: 500px;
-  height: 34px;
+  height: 33px;
   font-size: 16px;
   line-height: 34px;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   border: none;
@@ -156,4 +157,253 @@ li {
   background-position: -623px -96px;
   position: relative;
   top: 3px;
+}
+.opt {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: #000;
+  opacity: .5;
+}
+.sub_container .login_username {
+  width: 356px;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin-left: -196px;
+  margin-top: -224px;
+  background: #fff;
+  z-index: 2;
+  padding: 28px  28px 0 28px;
+  box-sizing: border-box;
+}
+.sub_container .login_username .del {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: url('https://passport.baidu.com/passApi/img/pass_login_icons.png') -56px -48px;
+  float: right;
+}
+.sub_container .login_username .login_tit {
+  font-size: 18px;
+  height: 32px;
+  line-height: 46px;
+  padding-left: 118px;
+  margin-bottom: 40px;
+  background: url('https://passport.baidu.com/passApi/img/loginlogo.png') no-repeat;
+}
+.sub_container .login_username input[type=text] {
+  display: block;
+  height: 20px;
+  padding: 10px 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 284px;
+  color: #666;
+  margin-bottom: 16px;
+}
+.sub_container .login_username input[type=password] {
+  display: block;
+  height: 20px;
+  padding: 10px 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 284px;
+  color: #666;
+  margin-bottom: 16px;
+}
+.sub_container .login_username button {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #2d78f4;
+  background: #2d78f4;
+  color: #ffffff;
+  width: 300px;
+}
+.sub_container .login_username .login_last {
+  margin-top: 12px;
+}
+.sub_container .login_username .login_last .forget {
+  float: left;
+}
+.sub_container .login_username .login_last .forget a {
+  font-size: 12px;
+  color: #2e82ff;
+  text-decoration: none;
+}
+.sub_container .login_username .login_last .login_sms {
+  float: right;
+}
+.sub_container .login_username .login_last .login_sms a {
+  font-size: 12px;
+  color: #2e82ff;
+  text-decoration: none;
+}
+.sub_container .login_username .login_more {
+  background: #f0f6ff;
+  margin-top: 40px;
+  height: 60px;
+  line-height: 60px;
+  width: 356px;
+  margin-left: -28px;
+}
+.sub_container .login_username .login_more .login_code p {
+  float: left;
+  width: 80px;
+  font-size: 14px;
+  margin-left: 28px;
+}
+.sub_container .login_username .login_more .login_code p a {
+  font-size: 14px;
+  color: #2e82ff;
+  text-decoration: none;
+}
+.sub_container .login_username .login_more .login_code .icons {
+  float: left;
+}
+.sub_container .login_username .login_more .login_code .icons ul li {
+  float: left;
+  margin-top: 21px;
+}
+.sub_container .login_username .login_more .login_code .icons ul li:first-child {
+  padding-left: 20px;
+  border-left: 1px solid #2d78f4;
+}
+.sub_container .login_username .login_more .login_code .icons ul li a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: url('https://passport.baidu.com/passApi/img/loginv4.png') no-repeat;
+  background-position: -6px -55px;
+}
+.sub_container .login_username .login_more .second {
+  float: right;
+  margin-right: 28px;
+}
+.sub_container .login_username .login_more .second a {
+  text-decoration: none;
+  color: #2d78f4;
+}
+.sub_container .login_codes {
+  width: 356px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -196px;
+  margin-top: -224px;
+  background: #fff;
+  z-index: 2;
+  padding: 28px  28px 0 28px;
+  box-sizing: border-box;
+}
+.sub_container .login_codes .del {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background: url('https://passport.baidu.com/passApi/img/pass_login_icons.png') -56px -48px;
+  float: right;
+}
+.sub_container .login_codes .login_tit {
+  font-size: 18px;
+  height: 32px;
+  line-height: 46px;
+  padding-left: 118px;
+  margin-bottom: 40px;
+  background: url('https://passport.baidu.com/passApi/img/loginlogo.png') no-repeat;
+}
+.sub_container .login_codes img {
+  display: block;
+  width: 138px;
+  height: 138px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+.sub_container .login_codes p {
+  font-size: 16px;
+}
+.sub_container .login_codes p.img_details {
+  text-align: center;
+}
+.sub_container .login_codes p span {
+  color: #2d78f4;
+}
+.sub_container .login_codes .login_code_list {
+  padding-top: 40px;
+  margin-left: 16px;
+  margin-bottom: 50px;
+}
+.sub_container .login_codes .login_code_list ul li {
+  float: left;
+  width: 70px;
+  margin-left: 24px;
+  color: #999;
+  font-size: 12px;
+}
+.sub_container .login_codes .login_code_list ul li span {
+  display: inline-block;
+  width: 12px;
+  height: 18px;
+  background: url('https://passport.baidu.com/passApi/img/loginv4.png') no-repeat;
+  background-position: -9px -3px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.sub_container .login_codes .login_more {
+  background: #f0f6ff;
+  margin-top: 40px;
+  height: 60px;
+  line-height: 60px;
+  width: 356px;
+  margin-left: -28px;
+}
+.sub_container .login_codes .login_more .login_code p {
+  float: left;
+  width: 80px;
+  font-size: 14px;
+  margin-left: 28px;
+}
+.sub_container .login_codes .login_more .login_code p a {
+  font-size: 14px;
+  color: #2e82ff;
+  text-decoration: none;
+}
+.sub_container .login_codes .login_more .login_code .icons {
+  float: left;
+}
+.sub_container .login_codes .login_more .login_code .icons ul li {
+  float: left;
+  margin-top: 21px;
+}
+.sub_container .login_codes .login_more .login_code .icons ul li:first-child {
+  padding-left: 20px;
+  border-left: 1px solid #2d78f4;
+}
+.sub_container .login_codes .login_more .login_code .icons ul li a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  background: url('https://passport.baidu.com/passApi/img/loginv4.png') no-repeat;
+  background-position: -6px -55px;
+}
+.sub_container .login_codes .login_more .second {
+  float: right;
+  margin-right: 28px;
+}
+.sub_container .login_codes .login_more .second a {
+  text-decoration: none;
+  color: #2d78f4;
 }
