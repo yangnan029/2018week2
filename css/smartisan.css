@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  background: #ededed;
+}
+.tit {
+  background: #000;
+  height: 100px;
+  vertical-align: middle;
+}
+.tit .tit_container {
+  width: 1220px;
+  margin: 0 auto;
+}
+.tit .tit_container .logo {
+  float: left;
+}
+.tit .tit_container .logo a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url('https://static.smartisanos.cn/index/assets/images/global-logo-red@2x.85550cd7bec73c98adacee227ba6a8a0.png') no-repeat;
+  background-size: 100%;
+  background-position: 0 5px;
+  margin-top: 25px;
+}
+.tit .tit_container .tit_right {
+  float: right;
+}
+.tit .tit_container .tit_right .tit_list {
+  float: left;
+}
+.tit .tit_container .tit_right .tit_list ul li {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+}
+.tit .tit_container .tit_right .tit_list ul li a {
+  color: #ffffff;
+  font-size: 14px;
+  padding: 0 25px;
+}
+.tit .tit_container .tit_right .login_list {
+  float: left;
+}
+.tit .tit_container .tit_right .login_list ul li {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 41px;
+}
+.tit .tit_container .tit_right .login_list ul li i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('https://static.smartisanos.cn/index/assets/images/account-icon.32d87deb02b3d1c3cc5bcff0c26314ac.png') -5px 0;
+  background-size: 240px 107px;
+  margin-top: 40px;
+}
+.tit .tit_container .tit_right .login_list ul li i.buys {
+  float: left;
+  background: url('https://static.smartisanos.cn/index/assets/images/account-icon.32d87deb02b3d1c3cc5bcff0c26314ac.png') 0 -22px;
+  background-position: -156px -22px;
+}
+.tit .tit_container .tit_right .login_list ul li span {
+  display: block;
+  float: left;
+  margin-top: 40px;
+  width: 20px;
+  height: 20px;
+  background: #969696;
+  box-shadow: inset 0 0 1px #838383, 0 1px 2px #838383;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.container {
+  width: 1220px;
+  margin: 0 auto;
+}
+.container .nav {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 31px 0;
+  height: 28px;
+}
+.container .nav ul li {
+  float: left;
+}
+.container .nav ul li a {
+  display: block;
+  padding: 0 20px;
+  color: #666;
+  font-size: 14px;
+}
+.container .banner {
+  width: 1220px;
+  margin: 0 auto;
+}
+.container .banner img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+.container .content1 {
+  margin-top: 25px;
+  box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.container .content1 ul {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.1);
+}
+.container .content1 ul li {
+  float: left;
+  width: 25%;
+  height: 200px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.container .content1 ul li:first-child {
+  border-right: none;
+}
+.container .content1 ul li:nth-child(3) {
+  border-left: none;
+  border-right: none;
+}
+.container .product {
+  margin-top: 25px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.1);
+}
+.container .product .porduct_tit {
+  font-size: 18px;
+  line-height: 60px;
+  color: #666;
+  background: #fafafa;
+  position: relative;
+}
+.container .product .porduct_tit h5 {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container .product .porduct_tit .preview_next_icon {
+  position: absolute;
+  top: 18px;
+  right: 8px;
+  font-size: 16px;
+  line-height: 16px;
+}
+.container .product .porduct_tit .preview_next_icon span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  color: #474747;
+  background: url('https://static.smartisanos.cn/index/assets/images/hot-arrow-sprite.f39849781ff04ea1c0a6f34b3d627c28.png') no-repeat;
+  background-position: -46px 0;
+  margin-left: 17px;
+}
+.container .product .porduct_tit .preview_next_icon span.next {
+  background-position: -138px 0;
+}
+.container .product .porduct_list ul li {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  height: 429px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-top: none;
+}
+.container .product .porduct_list ul li:first-child {
+  border-right: none;
+}
+.container .product .porduct_list ul li:nth-child(even) {
+  border-right: none;
+  border-left: none;
+}
+.container .product .porduct_list ul li.first_list {
+  width: 50%;
+}
+.container .product .porduct_list ul li.first_list img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.container .product .porduct_list ul li img {
+  display: block;
+  width: 206px;
+  height: 206px;
+  margin: 50px auto 20px;
+}
+.container .product .porduct_list ul li h6 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.container .product .porduct_list ul li p {
+  padding-top: 7px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #b2b2b2;
+}
+.container .product .porduct_list ul li p.price {
+  line-height: 30px;
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+}
+.container .product .porduct_list ul li .tabs {
+  color: red;
+}
+.container .smartisan_app {
+  margin-top: 25px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.1);
+}
+.container .smartisan_app .smartisan_tit {
+  font-size: 18px;
+  line-height: 60px;
+  color: #666;
+  background: #fafafa;
+  position: relative;
+}
+.container .smartisan_app .smartisan_tit h5 {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container .smartisan_app .smartisan_list ul li {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  height: 315px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 30px;
+}
+.container .smartisan_app .smartisan_list ul li:nth-child(even) {
+  border-right: none;
+  border-left: none;
+}
+.container .smartisan_app .smartisan_list ul li .app_img {
+  margin: 22px auto 0;
+  width: 96px;
+  height: 96px;
+  background: url('https://static.smartisanos.cn/index/assets/images/app-icon-sprite.09cf0f99d091277532779a2b2971e708.png');
+}
+.container .smartisan_app .smartisan_list ul li .app_info {
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.container .smartisan_app .smartisan_list ul li .app_info h6 {
+  font-size: 15px;
+  line-height: 1;
+  color: #424242;
+  font-weight: 400;
+}
+.container .smartisan_app .smartisan_list ul li .app_info p {
+  font-size: 12px;
+  margin-top: 6px;
+  line-height: 1.2;
+  color: #b2b2b2;
+}
