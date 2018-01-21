@@ -86,6 +86,7 @@ body {
   margin-top: 40px;
   width: 20px;
   height: 20px;
+  margin-left: 5px;
   background: #969696;
   box-shadow: inset 0 0 1px #838383, 0 1px 2px #838383;
   border-radius: 10px;
@@ -94,6 +95,7 @@ body {
 .container {
   width: 1220px;
   margin: 0 auto;
+  padding: 0 0 60px;
 }
 .container .nav {
   width: 1220px;
@@ -139,6 +141,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
   overflow: hidden;
+}
+.container .content1 ul li:hover {
+  box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.08);
+  transition: all .15s ease;
 }
 .container .content1 ul li:first-child {
   border-right: none;
@@ -188,6 +194,7 @@ body {
   background-position: -138px 0;
 }
 .container .product .porduct_list ul li {
+  position: relative;
   float: left;
   box-sizing: border-box;
   width: 25%;
@@ -196,8 +203,9 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-top: none;
 }
-.container .product .porduct_list ul li:first-child {
-  border-right: none;
+.container .product .porduct_list ul li:hover {
+  box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.08);
+  transition: all .15s ease;
 }
 .container .product .porduct_list ul li:nth-child(even) {
   border-right: none;
@@ -235,6 +243,24 @@ body {
   font-size: 16px;
   margin-top: 5px;
 }
+.container .product .porduct_list ul li .tips {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.container .product .porduct_list ul li .tips span {
+  display: block;
+  height: 28px;
+  line-height: 26px;
+  padding: 0 10px;
+  font-size: 12px;
+  border: 1px solid #ffe57a;
+  color: #e6b217;
+  background: #fffbe5;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  border-radius: 14px;
+}
 .container .product .porduct_list ul li .tabs {
   color: red;
 }
@@ -259,7 +285,161 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
+.container .smartisan_app .smartisan_tit .more {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 14px;
+}
+.container .smartisan_app .smartisan_tit .more a {
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 0 15px 0 19px;
+  line-height: 34px;
+  color: #666;
+  background: #fafafa;
+}
 .container .smartisan_app .smartisan_list ul li {
+  float: left;
+  box-sizing: border-box;
+  width: 25%;
+  height: 315px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+.container .smartisan_app .smartisan_list ul li:nth-child(even) {
+  border-right: none;
+  border-left: none;
+}
+.container .smartisan_app .smartisan_list ul li:hover {
+  box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.08);
+  transition: all .15s ease;
+}
+.container .smartisan_app .smartisan_list ul li:hover .app_show {
+  display: none;
+}
+.container .smartisan_app .smartisan_list ul li:hover .app_download {
+  display: block;
+}
+.container .smartisan_app .smartisan_list ul li .app_show {
+  display: block;
+  padding-top: 30px;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .app_img {
+  margin: 22px auto 0;
+  width: 96px;
+  height: 96px;
+  background: url('https://static.smartisanos.cn/index/assets/images/app-icon-sprite.09cf0f99d091277532779a2b2971e708.png');
+}
+.container .smartisan_app .smartisan_list ul li .app_show .app_info {
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .app_info h6 {
+  font-size: 15px;
+  line-height: 1;
+  color: #424242;
+  font-weight: 400;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .app_info p {
+  font-size: 12px;
+  margin-top: 6px;
+  line-height: 1.2;
+  color: #b2b2b2;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .app_info p.first_one {
+  margin-top: 15px;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .platform {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .platform .windows {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAXklEQVR4AWOgNnjA/8D2QeKD9gdrH1x88BUhnP6gGyh04cGhBwUP/iMgXAFc6ALtFCyAwqYHbkASDgkqoKsjCx9MfbDjwe0Hp9EVYAa10APnBxnAcF3/4PKD79SJPgC8y+Fmo46kggAAAABJRU5ErkJggg==');
+}
+.container .smartisan_app .smartisan_list ul li .app_show .platform .liner {
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  margin: 5px 0;
+  background: #b2b2b2;
+}
+.container .smartisan_app .smartisan_list ul li .app_show .platform .iphone {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 5px;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAmUlEQVR4AWMgGTzgfzD7wUR8CrY8+P8gHre0GlB6+QNmTAmuB2UPNj3oexD5IPNBwYO1DxY8sEOWFnhwCagTFf594I9QMA0ujICrH7AgFDzFokAN2Yq/WBSwIyt4gakA1ZGbsCi48EAUoSAOKIAJzyMUsD24j0VBPLIlrg/+oElve8CIGpYRD14+uPOgHRyOXx5sfMBPZOwCAHVg3sh2l3OaAAAAAElFTkSuQmCC');
+}
+.container .smartisan_app .smartisan_list ul li .app_download {
+  display: none;
+}
+.container .smartisan_app .smartisan_list ul li .app_download .down_img {
+  margin: 64px auto 0;
+  box-sizing: border-box;
+  border: 1px solid #f7f7f7;
+  padding: 4px;
+  width: 120px;
+  height: 120px;
+  background: url('https://static.smartisanos.cn/index/assets/images/bbs-download.a33b4d9f1d448fe580f07e38adcf06c4.jpg');
+}
+.container .smartisan_app .smartisan_list ul li .app_download p {
+  margin-top: 35px;
+  line-height: 1.2;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+.container .smartisan_app .smartisan_list ul li .app_download a {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #5079d9;
+}
+.container .bbs {
+  margin-top: 25px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 3px 8px -6px rgba(0, 0, 0, 0.1);
+}
+.container .bbs .bbs_tit {
+  font-size: 18px;
+  line-height: 60px;
+  color: #666;
+  background: #fafafa;
+  position: relative;
+}
+.container .bbs .bbs_tit h5 {
+  margin-left: 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container .bbs .bbs_tit .more {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 14px;
+}
+.container .bbs .bbs_tit .more a {
+  display: inline-block;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  padding: 0 15px 0 19px;
+  line-height: 34px;
+  color: #666;
+  background: #fafafa;
+}
+.container .bbs .bbs_list ul li {
   float: left;
   box-sizing: border-box;
   width: 25%;
@@ -268,29 +448,131 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.14);
   padding: 30px;
 }
-.container .smartisan_app .smartisan_list ul li:nth-child(even) {
+.container .bbs .bbs_list ul li:nth-child(even) {
   border-right: none;
   border-left: none;
 }
-.container .smartisan_app .smartisan_list ul li .app_img {
-  margin: 22px auto 0;
-  width: 96px;
-  height: 96px;
-  background: url('https://static.smartisanos.cn/index/assets/images/app-icon-sprite.09cf0f99d091277532779a2b2971e708.png');
+.container .bbs .bbs_list ul li:hover {
+  box-shadow: inset 0 0 38px rgba(0, 0, 0, 0.08);
+  transition: all .15s ease;
 }
-.container .smartisan_app .smartisan_list ul li .app_info {
-  margin-top: 40px;
+.container .bbs .bbs_list ul li .bbs_img {
+  display: block;
+  border-radius: 4px;
+  width: 246px;
+  height: 138px;
+  background: rgba(0, 0, 0, 0.1);
+  background: url('https://resource.smartisan.com/resource/0ac4853da0303c131147044f85d4bb1c.jpg');
+}
+.container .bbs .bbs_list ul li .bbs_info {
+  margin-top: 30px;
   box-sizing: border-box;
+  width: 100%;
 }
-.container .smartisan_app .smartisan_list ul li .app_info h6 {
+.container .bbs .bbs_list ul li .bbs_info h6 {
   font-size: 15px;
   line-height: 1;
   color: #424242;
   font-weight: 400;
+  text-align: left;
 }
-.container .smartisan_app .smartisan_list ul li .app_info p {
+.container .bbs .bbs_list ul li .bbs_info p {
   font-size: 12px;
   margin-top: 6px;
   line-height: 1.2;
   color: #b2b2b2;
+  margin-top: 15px;
+  text-align: left;
+}
+.footer {
+  background: #fafafa;
+  border-top: 1px solid #e6e6e6;
+}
+.footer .footer_container {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 100px 0 32px;
+  height: 100px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.footer .footer_container dl {
+  float: left;
+  width: 149px;
+}
+.footer .footer_container dl dt {
+  color: #646464;
+  font-size: 12px;
+  padding: 0 0 14px;
+}
+.footer .footer_container dl dd {
+  color: #c3c3c3;
+  font-size: 12px;
+  padding: 3px 0;
+}
+.footer .footer_container ul {
+  float: right;
+  text-align: right;
+}
+.footer .footer_container ul li {
+  width: 241px;
+  text-align: right;
+}
+.footer .footer_container ul li.tel {
+  font-size: 30px;
+  line-height: 1pz;
+  color: #646464;
+}
+.footer .footer_container ul li.details {
+  font-size: 12px;
+  line-height: 18px;
+  color: #c3c3c3;
+}
+.footer .footer_container ul li.online {
+  float: right;
+  width: 102px;
+  height: 32px;
+  line-height: 32px;
+  background: linear-gradient(#fcfcfc, #f5f5f5);
+  font-size: 14px;
+  padding: 0 0 0 26px;
+  margin-top: 8px;
+  text-align: left;
+  color: #5079d9;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+}
+.footer .footer_container ul li.online a {
+  color: #5079d9;
+}
+.footer .copyright {
+  width: 1220px;
+  margin: 0 auto;
+  color: #434d55;
+  font-size: 12px;
+  padding: 40px 0;
+}
+.footer .copyright h4 {
+  float: left;
+  height: 12px;
+  line-height: 12px;
+  color: #757575;
+}
+.footer .copyright ul li {
+  float: left;
+  line-height: 12px;
+  padding: 1px 10px 0;
+  border-left: 1px solid #ccc;
+}
+.footer .copyright ul li a {
+  color: #5079d9;
+}
+.footer .copyright .bottom h6 {
+  padding: 10px 0 0;
+  height: 15px;
+  line-height: 15px;
+  color: #bdbdbd;
+  font-weight: 400;
+}
+.footer .copyright .bottom h6 span {
+  margin-right: 20px;
 }
