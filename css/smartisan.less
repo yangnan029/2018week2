@@ -1,116 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.clearfix{
+
+.clearfix {
     zoom: 1;
-    &:after{
+    &:after {
         content: '';
         display: block;
         height: 0;
         clear: both;
-
     }
 }
-a{
+
+a {
     text-decoration: none;
 }
-ul,li{
+
+ul,
+li {
     list-style: none;
 }
-body{
+
+body {
     background: #ededed;
 }
-.tit{
+
+.tit {
     background: #000;
     height: 100px;
     vertical-align: middle;
-   .tit_container{
-       width: 1220px;
-       margin: 0 auto;
-    .logo{
-        float: left;
-        a{            
-            display: block;
-            width: 50px;
-            height: 50px;
-            background: url('https://static.smartisanos.cn/index/assets/images/global-logo-red@2x.85550cd7bec73c98adacee227ba6a8a0.png') no-repeat;
-            background-size: 100%;
-            background-position: 0 5px;
-            margin-top: 25px;
-        }
-    }
-    .tit_right{
-        float: right;
-    .tit_list{
-        float: left;
-        ul{
-            li{
-                float: left;
-                height: 100px;
-                line-height: 100px;
-                a{
-                    color: #ffffff;
-                    font-size: 14px;
-                    padding: 0 25px;
-                }
+    min-width: 1220px;
+    .tit_container {
+        width: 1220px;
+        margin: 0 auto;
+        .logo {
+            float: left;
+            a {
+                display: block;
+                width: 50px;
+                height: 50px;
+                background: url('https://static.smartisanos.cn/index/assets/images/global-logo-red@2x.85550cd7bec73c98adacee227ba6a8a0.png') no-repeat;
+                background-size: 100%;
+                background-position: 0 5px;
+                margin-top: 25px;
             }
         }
-    }
-    .login_list{
-        float: left;
-        ul{
-            li{
+        .tit_right {
+            float: right;
+            .tit_list {
                 float: left;
-                height: 100px;
-                line-height: 100px;
-                margin-left: 41px;
-                i{
-                    display: block;
-                    width: 20px;
-                    height: 20px;
-                    background: url('https://static.smartisanos.cn/index/assets/images/account-icon.32d87deb02b3d1c3cc5bcff0c26314ac.png') -5px 0;
-                    background-size: 240px 107px;
-                    margin-top: 40px;
-                    &.buys{
+                ul {
+                    li {
                         float: left;
-                        background: url('https://static.smartisanos.cn/index/assets/images/account-icon.32d87deb02b3d1c3cc5bcff0c26314ac.png') 0 -22px;
-                        background-position: -156px -22px;
+                        height: 100px;
+                        line-height: 100px;
+                        a {
+                            color: #ffffff;
+                            font-size: 14px;
+                            padding: 0 25px;
+                        }
                     }
                 }
-                span{
-                    display: block;
-                    float: left;
-                    margin-top: 40px;
-                    width: 20px;
-                    height: 20px;
-                    margin-left: 5px;
-                    background: #969696;
-                    box-shadow: inset 0 0 1px #838383, 0 1px 2px #838383;
-                    border-radius: 10px;
-                    color: #ffffff;
+            }
+            .login_list {
+                float: left;
+                ul {
+                    li {
+                        float: left;
+                        height: 100px;
+                        line-height: 100px;
+                        margin-left: 41px;
+                        i {
+                            display: block;
+                            width: 20px;
+                            height: 20px;
+                            background: url('https://static.smartisanos.cn/index/assets/images/account-icon.32d87deb02b3d1c3cc5bcff0c26314ac.png') -5px 0;
+                            background-size: 240px 107px;
+                            margin-top: 40px;
+                            &.buys {
+                                float: left;
+                                background: url('https://static.smartisanos.cn/index/assets/images/account-icon.32d87deb02b3d1c3cc5bcff0c26314ac.png') 0 -22px;
+                                background-position: -156px -22px;
+                            }
+                        }
+                        span {
+                            display: block;
+                            float: left;
+                            margin-top: 40px;
+                            width: 20px;
+                            height: 20px;
+                            margin-left: 5px;
+                            background: #969696;
+                            box-shadow: inset 0 0 1px #838383, 0 1px 2px #838383;
+                            border-radius: 10px;
+                            color: #ffffff;
+                        }
+                    }
                 }
             }
         }
     }
-    }
-   } 
-
 }
-.container{   
+
+.container {
     width: 1220px;
     margin: 0 auto;
     padding: 0 0 60px;
-    .nav{
+    .nav {
         width: 1220px;
         margin: 0 auto;
         padding: 31px 0;
         height: 28px;
-        ul{
-            li{
+        ul {
+            li {
                 float: left;
-
-                a{
+                a {
                     display: block;
                     padding: 0 20px;
                     color: #666;
@@ -119,73 +124,73 @@ body{
             }
         }
     }
-    .banner{
+    .banner {
         width: 1220px;
         margin: 0 auto;
-        img{
+        img {
             width: 100%;
             height: 500px;
             border-radius: 10px;
         }
     }
-    .content1{
+    .content1 {
         margin-top: 25px;
-        box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
+        box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
         overflow: hidden;
-        ul{
+        ul {
             overflow: hidden;
-            border: 1px solid rgba(0,0,0,.14);
+            border: 1px solid rgba(0, 0, 0, .14);
             border-radius: 8px;
             background: #fff;
-            box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
-            li{
+            box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+            li {
                 float: left;
                 width: 25%;
                 height: 200px;
                 text-align: center;
-                border: 1px solid rgba(0,0,0,.14);
+                border: 1px solid rgba(0, 0, 0, .14);
                 box-sizing: border-box;
                 overflow: hidden;
-                &:hover{
-                    box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+                &:hover {
+                    box-shadow: inset 0 0 38px rgba(0, 0, 0, .08);
                     transition: all .15s ease;
                 }
-                &:first-child{
+                &:first-child {
                     border-right: none;
                 }
-                &:nth-child(3){
+                &:nth-child(3) {
                     border-left: none;
                     border-right: none;
                 }
             }
         }
     }
-    .product{
+    .product {
         margin-top: 25px;
         box-sizing: border-box;
-        border: 1px solid rgba(0,0,0,.14);
+        border: 1px solid rgba(0, 0, 0, .14);
         border-radius: 8px;
         background: #fff;
         overflow: hidden;
-        box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
-        .porduct_tit{
+        box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+        .porduct_tit {
             font-size: 18px;
             line-height: 60px;
             color: #666;
             background: #fafafa;
             position: relative;
-            h5{
+            h5 {
                 margin-left: 30px;
                 font-size: 18px;
                 font-weight: 400;
             }
-            .preview_next_icon{
+            .preview_next_icon {
                 position: absolute;
                 top: 18px;
                 right: 8px;
                 font-size: 16px;
                 line-height: 16px;
-                span{
+                span {
                     display: inline-block;
                     width: 36px;
                     height: 36px;
@@ -193,70 +198,68 @@ body{
                     background: url('https://static.smartisanos.cn/index/assets/images/hot-arrow-sprite.f39849781ff04ea1c0a6f34b3d627c28.png') no-repeat;
                     background-position: -46px 0;
                     margin-left: 17px;
-                    &.next{
+                    &.next {
                         background-position: -138px 0;
                     }
                 }
             }
         }
-        .porduct_list{
-            ul{
-                li{
+        .porduct_list {
+            ul {
+                li {
                     position: relative;
                     float: left;
                     box-sizing: border-box;
                     width: 25%;
                     height: 429px;
                     text-align: center;
-                    border: 1px solid rgba(0,0,0,.14);
+                    border: 1px solid rgba(0, 0, 0, .14);
                     border-top: none;
-                    &:hover{
-                        box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+                    &:hover {
+                        box-shadow: inset 0 0 38px rgba(0, 0, 0, .08);
                         transition: all .15s ease;
                     }
-                    &:nth-child(even){
+                    &:nth-child(even) {
                         border-right: none;
                         border-left: none;
                     }
-                    &.first_list{
+                    &.first_list {
                         width: 50%;
-                        img{
+                        img {
                             width: 100%;
                             height: 100%;
                             margin: 0;
                         }
                     }
-                    img{
+                    img {
                         display: block;
                         width: 206px;
                         height: 206px;
                         margin: 50px auto 20px;
-                        
                     }
-                    h6{
+                    h6 {
                         font-size: 16px;
                         line-height: 1.2;
                         font-weight: 400;
                     }
-                    p{
+                    p {
                         padding-top: 7px;
                         font-size: 12px;
                         line-height: 1.2;
                         color: #b2b2b2;
-                        &.price{
+                        &.price {
                             line-height: 30px;
-                            color:red;
+                            color: red;
                             font-weight: bold;
                             font-size: 16px;
                             margin-top: 5px;
                         }
-                        
                     }
-                    .tips{
+                    .tips {
                         position: absolute;
                         top: 20px;
                         right: 20px;
-                        span{
+                        span {
                             display: block;
                             height: 28px;
                             line-height: 26px;
@@ -265,43 +268,43 @@ body{
                             border: 1px solid #ffe57a;
                             color: #e6b217;
                             background: #fffbe5;
-                            box-shadow: 0 1px 3px 0 rgba(0,0,0,.05);
+                            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .05);
                             box-sizing: border-box;
                             border-radius: 14px;
                         }
                     }
-                    .tabs{
+                    .tabs {
                         color: red;
                     }
                 }
             }
         }
     }
-    .smartisan_app{
+    .smartisan_app {
         margin-top: 25px;
         box-sizing: border-box;
-        border: 1px solid rgba(0,0,0,.14);
+        border: 1px solid rgba(0, 0, 0, .14);
         border-radius: 8px;
         background: #fff;
         overflow: hidden;
-        box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
-        .smartisan_tit{
+        box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+        .smartisan_tit {
             font-size: 18px;
             line-height: 60px;
             color: #666;
             background: #fafafa;
             position: relative;
-            h5{
+            h5 {
                 margin-left: 30px;
                 font-size: 18px;
                 font-weight: 400;
             }
-            .more{
+            .more {
                 position: absolute;
                 top: 0;
                 right: 14px;
                 font-size: 14px;
-                a{
+                a {
                     display: inline-block;
                     border: 1px solid #e1e1e1;
                     border-radius: 4px;
@@ -312,77 +315,76 @@ body{
                 }
             }
         }
-        .smartisan_list{
-            ul{
-                li{
+        .smartisan_list {
+            ul {
+                li {
                     float: left;
                     box-sizing: border-box;
                     width: 25%;
                     height: 315px;
                     text-align: center;
-                    border: 1px solid rgba(0,0,0,.14);
-                    &:nth-child(even){
+                    border: 1px solid rgba(0, 0, 0, .14);
+                    &:nth-child(even) {
                         border-right: none;
                         border-left: none;
                     }
-                    &:hover{
-                        box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+                    &:hover {
+                        box-shadow: inset 0 0 38px rgba(0, 0, 0, .08);
                         transition: all .15s ease;
-                        .app_show{
+                        .app_show {
                             display: none;
                         }
-                        .app_download{
+                        .app_download {
                             display: block;
                         }
                     }
-                    .app_show{
+                    .app_show {
                         display: block;
                         padding-top: 30px;
-                        
-                        .app_img{
+                        .app_img {
                             margin: 22px auto 0;
                             width: 96px;
                             height: 96px;
                             background: url('https://static.smartisanos.cn/index/assets/images/app-icon-sprite.09cf0f99d091277532779a2b2971e708.png');
                         }
-                        .app_info{
+                        .app_info {
                             margin-top: 40px;
                             box-sizing: border-box;
-                            h6{
+                            h6 {
                                 font-size: 15px;
                                 line-height: 1;
                                 color: #424242;
                                 font-weight: 400;
                             }
-                            p{
+                            p {
                                 font-size: 12px;
                                 margin-top: 6px;
                                 line-height: 1.2;
                                 color: #b2b2b2;
-                                &.first_one{
+                                &.first_one {
                                     margin-top: 15px;
                                 }
                             }
                         }
-                        .platform{
+                        .platform {
                             margin-top: 15px;
                             margin-bottom: 30px;
                             vertical-align: middle;
-                            .windows{
+                            .windows {
                                 display: inline-block;
                                 width: 16px;
                                 height: 16px;
                                 margin: 5px;
                                 background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAXklEQVR4AWOgNnjA/8D2QeKD9gdrH1x88BUhnP6gGyh04cGhBwUP/iMgXAFc6ALtFCyAwqYHbkASDgkqoKsjCx9MfbDjwe0Hp9EVYAa10APnBxnAcF3/4PKD79SJPgC8y+Fmo46kggAAAABJRU5ErkJggg==');
                             }
-                            .liner{
+                            .liner {
                                 display: inline-block;
                                 width: 1px;
                                 height: 16px;
                                 margin: 5px 0;
                                 background: #b2b2b2;
                             }
-                            .iphone{
+                            .iphone {
                                 display: inline-block;
                                 width: 16px;
                                 height: 16px;
@@ -391,9 +393,9 @@ body{
                             }
                         }
                     }
-                    .app_download{
+                    .app_download {
                         display: none;
-                        .down_img{
+                        .down_img {
                             margin: 64px auto 0;
                             box-sizing: border-box;
                             border: 1px solid #f7f7f7;
@@ -402,51 +404,50 @@ body{
                             height: 120px;
                             background: url('https://static.smartisanos.cn/index/assets/images/bbs-download.a33b4d9f1d448fe580f07e38adcf06c4.jpg');
                         }
-                        p{
+                        p {
                             margin-top: 35px;
                             line-height: 1.2;
                             color: #666;
                             font-size: 14px;
                             text-align: center;
                         }
-                        a{
+                        a {
                             display: inline-block;
                             margin-top: 16px;
                             font-size: 12px;
                             line-height: 1.2;
                             color: #5079d9;
                         }
-
                     }
                 }
             }
         }
     }
-    .bbs{
+    .bbs {
         margin-top: 25px;
         box-sizing: border-box;
-        border: 1px solid rgba(0,0,0,.14);
+        border: 1px solid rgba(0, 0, 0, .14);
         border-radius: 8px;
         background: #fff;
         overflow: hidden;
-        box-shadow: 0 3px 8px -6px rgba(0,0,0,.1);
-        .bbs_tit{
+        box-shadow: 0 3px 8px -6px rgba(0, 0, 0, .1);
+        .bbs_tit {
             font-size: 18px;
             line-height: 60px;
             color: #666;
             background: #fafafa;
             position: relative;
-            h5{
+            h5 {
                 margin-left: 30px;
                 font-size: 18px;
                 font-weight: 400;
             }
-            .more{
+            .more {
                 position: absolute;
                 top: 0;
                 right: 14px;
                 font-size: 14px;
-                a{
+                a {
                     display: inline-block;
                     border: 1px solid #e1e1e1;
                     border-radius: 4px;
@@ -457,44 +458,44 @@ body{
                 }
             }
         }
-        .bbs_list{
-            ul{
-                li{
+        .bbs_list {
+            ul {
+                li {
                     float: left;
                     box-sizing: border-box;
                     width: 25%;
                     height: 315px;
                     text-align: center;
-                    border: 1px solid rgba(0,0,0,.14);
+                    border: 1px solid rgba(0, 0, 0, .14);
                     padding: 30px;
-                    &:nth-child(even){
+                    &:nth-child(even) {
                         border-right: none;
                         border-left: none;
                     }
-                    &:hover{
-                        box-shadow: inset 0 0 38px rgba(0,0,0,.08);
+                    &:hover {
+                        box-shadow: inset 0 0 38px rgba(0, 0, 0, .08);
                         transition: all .15s ease;
                     }
-                    .bbs_img{
+                    .bbs_img {
                         display: block;
                         border-radius: 4px;
                         width: 246px;
                         height: 138px;
-                        background: rgba(0,0,0,.1);
+                        background: rgba(0, 0, 0, .1);
                         background: url('https://resource.smartisan.com/resource/0ac4853da0303c131147044f85d4bb1c.jpg');
                     }
-                    .bbs_info{
+                    .bbs_info {
                         margin-top: 30px;
                         box-sizing: border-box;
                         width: 100%;
-                        h6{
+                        h6 {
                             font-size: 15px;
                             line-height: 1;
                             color: #424242;
                             font-weight: 400;
                             text-align: left;
                         }
-                        p{
+                        p {
                             font-size: 12px;
                             margin-top: 6px;
                             line-height: 1.2;
@@ -508,51 +509,53 @@ body{
         }
     }
 }
-.footer{
+
+.footer {
+    min-width: 1220px;
     background: #fafafa;
     border-top: 1px solid #e6e6e6;
-    .footer_container{
+    .footer_container {
         width: 1220px;
         margin: 0 auto;
         padding: 100px 0 32px;
         height: 100px;
         border-bottom: 1px solid #e6e6e6;
-        dl{
+        dl {
             float: left;
             width: 149px;
-            dt{
+            dt {
                 color: #646464;
                 font-size: 12px;
                 padding: 0 0 14px;
             }
-            dd{
+            dd {
                 color: #c3c3c3;
                 font-size: 12px;
                 padding: 3px 0;
             }
         }
-        ul{
+        ul {
             float: right;
             text-align: right;
-            li{
+            li {
                 width: 241px;
                 text-align: right;
-                &.tel{
+                &.tel {
                     font-size: 30px;
                     line-height: 1pz;
                     color: #646464;
                 }
-                &.details{
+                &.details {
                     font-size: 12px;
                     line-height: 18px;
                     color: #c3c3c3;
                 }
-                &.online{
+                &.online {
                     float: right;
                     width: 102px;
                     height: 32px;
                     line-height: 32px;
-                    background: linear-gradient(#fcfcfc,#f5f5f5);
+                    background: linear-gradient(#fcfcfc, #f5f5f5);
                     font-size: 14px;
                     padding: 0 0 0 26px;
                     margin-top: 8px;
@@ -560,45 +563,44 @@ body{
                     color: #5079d9;
                     border: 1px solid #dcdcdc;
                     border-radius: 5px;
-                    a{
+                    a {
                         color: #5079d9;
                     }
                 }
-
             }
         }
     }
-    .copyright{
+    .copyright {
         width: 1220px;
         margin: 0 auto;
         color: #434d55;
         font-size: 12px;
         padding: 40px 0;
-        h4{
+        h4 {
             float: left;
             height: 12px;
             line-height: 12px;
             color: #757575;
         }
-        ul{
-            li{
+        ul {
+            li {
                 float: left;
                 line-height: 12px;
                 padding: 1px 10px 0;
                 border-left: 1px solid #ccc;
-                a{
+                a {
                     color: #5079d9;
                 }
             }
         }
-        .bottom{
-            h6{
+        .bottom {
+            h6 {
                 padding: 10px 0 0;
                 height: 15px;
                 line-height: 15px;
                 color: #bdbdbd;
                 font-weight: 400;
-                span{
+                span {
                     margin-right: 20px;
                 }
             }
